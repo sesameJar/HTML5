@@ -16,6 +16,10 @@
       background-color: darkgreen;
       margin-left: 140px;
     }
+    body{
+      width:800px;
+      height:800px;
+    }
   </style>
   <script type="text/javascript">
     function allowDrop (ev) {
@@ -32,9 +36,9 @@
 
   </script>
 </head>
-<body>
+<body >
 
-  <div id="box1" draggable="true"></div>
-  <div id="box2"></div>
+  <div id="box1" draggable="true" ondragstart="drag(event)"></div>
+  <div id="box2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 </body>
 </html>
