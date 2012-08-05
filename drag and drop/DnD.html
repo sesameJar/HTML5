@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8" />
+  <title></title>
+  <style type="text/css">
+    #box1{
+      width:100px;
+      height:100px;
+      background-color: darkmagenta;
+      float: left;
+    }
+    #box2{
+      width: 200px;
+      height: 200px;
+      background-color: darkgreen;
+      margin-left: 140px;
+    }
+  </style>
+  <script type="text/javascript">
+    function allowDrop (ev) {
+      ev.preventDefault();
+    }
+    function drag (ev) {
+      ev.dataTransfer.setData("object",ev.target.id)
+    }
+    function drop (ev) {
+      ev.preventDefault();
+      var fallingobj = ev.dataTransfer.getData("object");
+      ev.target.appendChild(document.getElementById(fallingobj));
+    }
+
+  </script>
+</head>
+<body>
+
+  <div id="box1" draggable="true"></div>
+  <div id="box2"></div>
+</body>
+</html>
