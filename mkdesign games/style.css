@@ -20,12 +20,17 @@ p#thinking{
 	opacity: 1;
 	text-transform: capitalize;
 }
-div.dropplace{
-	
+div#dropplace{
+	position: absolute;
+	width:150px;
+	min-height: 50px;
+	border:2px dashed gray;
+	top:480px;
+	left:450px;
+	z-index: 5;
 }
 div.mustachesampel{
-	position: relative;
-	width:1000px;
+	width:100px;
 	min-height:400px;
 
 }
@@ -37,39 +42,39 @@ div.mustachesampel div{
 	position:absolute;
 }
 
-div.mustachesampel div.mustache1{
+div#mustache1{
 	background-image:url('images/mustache1.png');
-	top:0;
+	top:30px;
 	left:0;
 	width: 146px;
 	background-position:0 -60px;
 	min-height:135px;
 }
 
-div.mustachesampel div.mustache2{
+div#mustache2{
 	background-image:url('images/mustache2.png');
-	top:0;
+	top:30px;
 	left:980px;
 }
 
-div.mustachesampel div.mustache3{
+div#mustache3{
 	background-image:url('images/mustache3.png');
-	top:300px;
+	top:330px;
 	left:0px;
 	width:100px;
 	background-position:0 -40px;
 }
 
-div.mustachesampel div.mustache4{
+div#mustache4{
 	background-image:url('images/mustache4.png');
-	top:300px;
+	top:330px;
 	left:800px;
 	background-position:0 -40px;
 }
 
-div.mustachesampel div.mustache5{
+div#mustache5{
 	background-image:url('images/mustache5.png');
-	top:250px;
+	top:280px;
 	left:150px;
 	width:200px;
 	background-position:0 -57px;
