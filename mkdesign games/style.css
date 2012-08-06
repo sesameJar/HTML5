@@ -1,0 +1,77 @@
+div.container{
+	background-image: url('images/FreeVector-Woman-Face.jpg');
+	min-height:700px;
+}
+div.qoute{
+	width:300px;
+	min-height:220px;
+	position: relative;
+	top:150px;
+	left:700px;
+	background-image: url('images/300px-Speech_bubble.svg_.png');
+}
+p#thinking{
+	position: absolute;
+	top:70px;
+	left:50px;
+	font-size: 17px;
+	font-family: Tahoma, sans-serif;
+	color: #ff8;
+	opacity: 1;
+	text-transform: capitalize;
+}
+div.dropplace{
+	
+}
+div.mustachesampel{
+	position: relative;
+	width:1000px;
+	min-height:400px;
+
+}
+
+div.mustachesampel div{
+	width:242px;
+	min-height:80px;
+	background-position:0 -30px;
+	position:absolute;
+}
+
+div.mustachesampel div.mustache1{
+	background-image:url('images/mustache1.png');
+	top:0;
+	left:0;
+	width: 146px;
+	background-position:0 -60px;
+	min-height:135px;
+}
+
+div.mustachesampel div.mustache2{
+	background-image:url('images/mustache2.png');
+	top:0;
+	left:980px;
+}
+
+div.mustachesampel div.mustache3{
+	background-image:url('images/mustache3.png');
+	top:300px;
+	left:0px;
+	width:100px;
+	background-position:0 -40px;
+}
+
+div.mustachesampel div.mustache4{
+	background-image:url('images/mustache4.png');
+	top:300px;
+	left:800px;
+	background-position:0 -40px;
+}
+
+div.mustachesampel div.mustache5{
+	background-image:url('images/mustache5.png');
+	top:250px;
+	left:150px;
+	width:200px;
+	background-position:0 -57px;
+
+}

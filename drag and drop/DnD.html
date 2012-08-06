@@ -1,44 +1,72 @@
 <!DOCTYPE HTML>
 <html lang="en-US">
 <head>
-  <meta charset="UTF-8" />
-  <title></title>
-  <style type="text/css">
-    #box1{
-      width:100px;
-      height:100px;
-      background-color: darkmagenta;
-      float: left;
-    }
-    #box2{
-      width: 200px;
-      height: 200px;
-      background-color: darkgreen;
-      margin-left: 140px;
-    }
-    body{
-      width:800px;
-      height:800px;
-    }
-  </style>
-  <script type="text/javascript">
-    function allowDrop (ev) {
-      ev.preventDefault();
-    }
-    function drag (ev) {
-      ev.dataTransfer.setData("object",ev.target.id)
-    }
-    function drop (ev) {
-      ev.preventDefault();
-      var fallingobj = ev.dataTransfer.getData("object");
-      ev.target.appendChild(document.getElementById(fallingobj));
-    }
+	<meta charset="UTF-8" />
+	<title></title>
+	<style type="text/css">
+		#box1{
+			width:100px;
+			height:100px;
+			background-color: darkmagenta;
+			float: left;
+		}
+		#box2{
+			width: 200px;
+			height: 200px;
+			background-color: darkgreen;
+			margin-left: 140px;
+		}
+		body{
+			width:800px;
+			height:800px;
+			background-image: url('images/');
+		}
+		p#asd{
+			position: absolute;
 
-  </script>
+		}
+	</style>
+	<script type="text/javascript">
+	var append;
+	function rnd(b,a){
+			return Math.floor(Math.random()*(b-a+1))+a;
+		};
+	var arr = ['boom','asd','asjd','as','fff'];
+		function allowDrop (ev) {
+			ev.preventDefault();
+		}
+		function drag (ev) {
+			ev.dataTransfer.setData("object",ev.target.id)
+		}
+		function drop (ev) {
+			ev.preventDefault();
+			var fallingobj = ev.dataTransfer.getData("object");
+			ev.target.appendChild(document.getElementById(fallingobj));
+			var get=document.getElementById('asd').innerHTML = arr[rnd(4,0)];
+
+		}
+		
+
+		
+		
+	</script>
 </head>
 <body >
 
-  <div id="box1" draggable="true" ondragstart="drag(event)"></div>
-  <div id="box2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	<div id="box1" draggable="true" ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	<div id="box2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	<p id="asd"></p>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
